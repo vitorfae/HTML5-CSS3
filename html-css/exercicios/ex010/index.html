@@ -8,18 +8,31 @@
 </head>
 <body>
     <h1>Usando links externos</h1>
-    <!--usando tag (a) para hiperlink-->
-    <!--usando tag (target="_blank") para abrir hiperlink em uma nova guia e manter meu site-->
-    <!--usando tag (rel="external") para dizer que o site é relacionado a um link externo-->
+    <!--usando tag (a) para hiperlink; (a) = Anchor = âncora-->
+    <!--TAG = ELEMENTO-->
+    <!--usando o atributo (target="_blank") para abrir hiperlink em uma nova guia e manter meu site-->
+    <!--usando o atributo (rel="external") para dizer que o site é relacionado a um link externo-->
     <p>Você pode acessar o meu <a href="https://github.com/vitorfae" target="_blank" rel="external">repositório do público no GitHub</a></p>
     <p>Você também pode acessar o <a href="https://www.youtube.com/@vitorfae4013">meu canal gratuito no youtube</a></p><!--Exemplo sem abrir em uma nova guia-->
-
-    <h1>Usando links externos</h1>
+    <hr>
+    <h1>Usando links internos</h1>
     <h2>Segunda página</h2>
     <p>essa é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
-    <!--usando tag (rel="next") para dizer que o site é relacionado a uma próxima página-->
+    <!--usando o atributo (rel="next") para dizer que o site é relacionado a uma próxima página-->
+    <br>
     <h2>Página de noticias (terceira página)</h2>
     <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de noticias</a></p>
-    <!--usando tag (target="_self") para abrir na mesma guia, simbolizando direcionamento internos dentro do mesmo sistema-->
+    <!--usando o atributo (target="_self") para abrir na mesma guia, simbolizando direcionamento internos dentro do mesmo sistema; self significa na própria aba-->
+    <br><hr>
+    <h1>Links para Downloads</h1>
+    <ul>
+        <!--<li><a href="livro/meulivro.pdf">Baixar o livro em PDF</a></li>--><!--O link assim apenas abre o pdf no google chrome-->
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em PDF</a></li>
+    </ul>
+    <br><hr>
+    <h3>expecificar link de arquivos para baixar</h3>
+    <p>https://www.iana.org/assignments/media-types/media-types.xhtml</p>
+    <p><a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Direcionado para o link</a></p>
 </body>
 </html>
