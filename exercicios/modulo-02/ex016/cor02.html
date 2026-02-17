@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Gradientes em CSS</title>
+    <style>
+        * { /*Com o * você faz uma configuração global no CSS*/
+            height: 100%; /*Definindo altura em 100% - Ideal para quando o degrade for para cima ou para baixo*/
+        }
+        body {
+            /*DEGRADÊ COM DUAS CORES*/
+
+            /*Para realizar degrade da esquerda para a direita (to right), se quiser da direita para a esquerda (to left), iniciando no branco e terminando no azul*/
+            /*background-image: linear-gradient(to right, #4FFFDC, #3fccb0, #3D8577);*/  /*ou pode por 90deg -> isso é igual a 90 graus., pode ser na diagonal usando 45deg e -45deg*/
+            /*para cima (to top), para baixo (to bottom)*/
+
+            /*DEGRADÊ INSTAGRAM*/
+            background-image: linear-gradient(to bottom, #3198E2 15%, #6D59C0, #B93590, #E33F5F, #FDD579);/*adicionando espaço e porcentagem após as cores é a porcentagem que ocupa do 100% do degradê*/
+            
+            /*DEGRADÊ INSTAGRAM CIRCULAR E RADIAL*/
+            /*background-image: radial-gradient(circle, #3198E2, #6D59C0, #B93590, #E33F5F, #FDD579);*/
+            background-attachment: fixed;/*Fundo fixo, com degradê fixo.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiante</h1>
+    <ul>
+        <li><strong>Design/Arte: </strong>Uma mudança de cor ou tom (degradê)</li>
+    </ul>
+</body>
+</html>
