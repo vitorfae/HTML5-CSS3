@@ -9,11 +9,19 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
+            /*Medidas absolutas:
+              CM->(centimetro), MM->(milimetro), IN->(polegada), PX->(pixel), PT->(ponto), PC->(picas)
+            
+              Medidas Relativas:width:
+              EM->(Relativo ao M maisuculo de uma fonte), EX->(Relativo a altura X de uma fonte), REM->(Relativo ao root(ROOT EM), o que ta definido no 'BODY' ou no '*' do CSS), VW e VH->(Viewport Width)larg. e vh (Viewport Height)alt.: Representam 1% da largura ou altura da tela (viewport), respectivamente. Ocupa toda a largura disponível.)
+              
+              "16px geralmente igual a 1em"
+
+              Recomenda-se usar EM ou PX, preferencia por EM e depois PX
+              */
+            font-size: 1em;/*vem pre configurado 16px*/
         }
 
-        h1, h2 {
-            font-family: 'Times New Roman', Times, serif;
-        }
     </style>
 </head>
 <body>

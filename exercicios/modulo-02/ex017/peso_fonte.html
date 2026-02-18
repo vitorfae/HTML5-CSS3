@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes com CSS</title>
+    <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        
+
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*Medidas absolutas:
+              CM->(centimetro), MM->(milimetro), IN->(polegada), PX->(pixel), PT->(ponto), PC->(picas)
+            
+              Medidas Relativas:width:
+              EM->(Relativo ao M maisuculo de uma fonte), EX->(Relativo a altura X de uma fonte), REM->(Relativo ao root(ROOT EM), o que ta definido no 'BODY' ou no '*' do CSS), VW e VH->(Viewport Width)larg. e vh (Viewport Height)alt.: Representam 1% da largura ou altura da tela (viewport), respectivamente. Ocupa toda a largura disponível.)
+              
+              "16px geralmente igual a 1em"
+
+              Recomenda-se usar EM ou PX, preferencia por EM e depois PX
+              */
+            font-size: 1em;/*vem pre configurado 16px*/
+            
+            /*NEM TODAS AS FONTES TEM ESSES BOLDERS DE CONFIGURACAO*/
+
+            /*font-weight: bolder;*/ /*bolder seria negrito*/
+
+            /*TIPOS DE PESO*/
+            /*Lighter, normal, bold, bolder ou de 100 a 900.*/
+
+            /*weight -> PESO, width -> LARGURA, height -> ALTURA*/
+
+            /*font-style: italic;*/ /*Escolhe a fonte normal ou italico*/
+            
+            /*text-decoration: underline;*/ /*Sublinhado*/
+           
+        }
+
+        h1 {
+            /*
+            font-family: 'Work Sans', sans-serif; -> familia da fonte, pode ser arial, times new roman, etc...
+            font-weight: bolder; -> peso da fonte, expliacao acima.
+            font-size: 3em; -> tamanho da fonte, explicado no arquivo font-size.
+            font-style: italic; -> estilo da fonte, aqui estamos usando italico.
+            */
+            /*SHORTHAND FONT (MAOZINHA PARA FONTE)*/
+            /*sequencia para funcionar a shorthand font*/
+            /*font: font-style -> font-weight -> font-size -> font-family*/ /*pode deixar faltando algum se nao quiser configurar, mas precisa ser nessa ordem*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+            text-decoration: underline;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis esse amet consequatur enim in hic inventore at quibusdam et maiores facilis, corrupti dolore, velit architecto fuga aperiam aspernatur dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, fugiat iusto numquam, ad totam accusamus eius dolore id modi aut sit? Illo error at consequatur deleniti quod non eum consectetur.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores at, aliquid veniam quasi, harum omnis, cupiditate iure quos tenetur officia nobis similique aspernatur? Pariatur enim fugiat alias facere ipsam error.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident fuga eius libero dolore assumenda magni enim, odit, quas veniam atque unde cumque itaque illo iste nesciunt eos ipsum sed voluptatibus.</p>
+</body>
+</html>
