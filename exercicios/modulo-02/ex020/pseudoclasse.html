@@ -6,16 +6,23 @@
     <title>Pseudoclasses</title>
     <style>
         div {
+            display: inline-block; /*Alinhar na mesma linha*/
             background-color: lightgrey;
+            border: 1px solid black; /*Shorthand (sequencia) -> largura, tipo e cor */
             text-align: center;
             height: 200px; /*Altura*/
             width: 200px;  /*Largura*/
         }
+        /*pesudoclasse e relacionado ao estado de um elemento. ex: se esta ativo, marcado, vazio, habilitado.*/
+        div:hover { /*hover e uma pseudoclasse, para usar pseudoclasses precisa de dois pontos*/
+            /*Hover significa quando eu passar o mouse por cima (div so vai ficar amarela quando eu passar o mouse por cima)*/
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
-    <div>01</div>
-    <div>02</div>
-    <div>03</div>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
 </body>
 </html>
